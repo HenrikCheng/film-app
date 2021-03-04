@@ -42,7 +42,12 @@ const App = () => {
   };
 
   const addFavouriteMovie = (movie) => {
-    const newFavouriteList = [...favourites, movie];
+    let newFavouriteList = [...favourites, movie];
+    favourites.forEach((element) => {
+      if (element === movie) {
+        newFavouriteList = favourites;
+      }
+    });
     setFavourites(newFavouriteList);
     saveToLocalStorage(newFavouriteList);
   };
