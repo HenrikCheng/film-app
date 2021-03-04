@@ -18,7 +18,7 @@ const MovieList = (props) => {
             // onClick={() => displayDescription(movie)}
             className="description d-flex align-items-center justify-content-center"
           >
-            🔎 {movie.Title}
+            {movie.Title}
           </div>
         </div>
       ))}

@@ -48,9 +48,3 @@ body {
   padding: 10px;
   text-align: center;
 }
-
-.description:hover {
-  font-size: 35px;
-  transition: 0.1s ease-in-out;
-  padding:5px;
-}
